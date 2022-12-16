@@ -35,7 +35,7 @@ public class HomeController {
 	@PostMapping("/createUser")
 	public String createuser(@ModelAttribute UserDtls user)
 	{
-		//System.out.println(user);
+		System.out.println(user);
 		UserDtls userDtls=userService.createUser(user);
 		return "register";
 	}
